@@ -15,6 +15,7 @@ const EmojiBtns = ({ post }) => {
     const emojiUI = Object.entries(emojiObject).map(([name, emoji]) => {
         return (
             <button
+                key={name}
                 type="button"
                 className="reactionButton"
                 onClick={() => {
